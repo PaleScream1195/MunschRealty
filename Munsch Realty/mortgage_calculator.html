@@ -56,58 +56,13 @@
         <a href="">Listings</a>
       </div>
     </section>
-<div style="width:960px; position:relative;"><iframe src ="https://www.mortgagecalculator.net/embeddable/v2/?size=1&textColor=003140&backgroundColor=e7f0f3" width="100%" frameborder=0 scrolling=no height=330></iframe><a style="width: 100%;background: #075269;color: #fff;text-align: center;font-weight: bold;display: block;clear: both;padding: 3px 0;font-size: 12px;text-transform: uppercase;font-family: arial;text-decoration: none; cursor:pointer;margin-top:-26px; position:absolute;" href="https://www.mortgagecalculator.net">Powered By www.MortgageCalculator.net</a></div>
-    <!--
     <h2>Mortgage Calculator</h2>
     <p>Owning a home is a great investment and it is key to plan your mortgage
     payments out ahead of time. Calculate your monthly mortgage payments using
     our free calculator below.</p>
-
-    <div id="myDIV">
-      <p>Principal Loan Amount</p>
-      <input type="text" name="Principal" id="principal"><br>
-      <p>Interest Rate, Please enter as a decimal.
-      ie: 5% is 0.05</p>
-      <input type="text" name="Interest rate" id="rate"><br>
-      <p>Number of Payments over the Loan's Lifetime</p>
-      <input type="text" name="Payments" id="Payments"><br>
-      <button onclick="MortgageFunction()" id="Button">Calculate</button>
-      <p>Calculated Mortgage Payments</p>
-
-    </div>
-
-
-    <script>
-    //Doesn't work. Looking for a new formula.
-    function MortgageFunction() {
-      var P = document.getElementById("principal").value;
-      var r = document.getElementById("rate").value;
-      var n = document.getElementById("Payments").value;
-      //changing year to monthly
-      var r = r/12 ;
-      //the total monthly mortgage payment.
-      var M = P(r(1+r)^n/((1+r)^n)-1));
-      //return the value
-      var para = document.createElement("P");                 // Create a <p> element
-      para.innerHTML = M ;                                    // Insert text
-      document.getElementById("myDIV").appendChild(para);     // Append <p> to <div> with id="myDIV"
-
-    }</script>
-
-<!--
-https://www.bankrate.com/calculators/mortgages/mortgage-calculator.aspx
-Equation for mortgage payments:
-M = P[r(1+r)^n/((1+r)^n)-1)]
-    M = the total monthly mortgage payment.
-    P = the principal loan amount.
-    r = your monthly interest rate. Lenders provide you an annual rate so you’ll
-     need to divide that figure by 12 (the number of months in a year) to get the monthly rate.
-     If your interest rate is 5%, your monthly rate would be 0.004167 (0.05/12=0.004167)
-    n = number of payments over the loan’s lifetime. Multiply the number of years in your loan term
-     by 12 (the number of months in a year) to get the number of payments for your loan.
-     For example, a 30-year fixed mortgage would have 360 payments (30x12=360)
- -->
-
-  </body>
-
+<div style="width:960px; position:relative;">
+  <iframe src ="https://www.mortgagecalculator.net/embeddable/v2/?size=1&textColor=003140&backgroundColor=e7f0f3" width="100%" frameborder=0 scrolling=no height=330></iframe>
+  <a style="width: 100%;background: #075269;color: #fff;text-align: center;font-weight: bold;display: block;clear: both;padding: 3px 0;font-size: 12px;text-transform: uppercase;font-family: arial;text-decoration: none; cursor:pointer;margin-top:-26px; position:absolute;" href="https://www.mortgagecalculator.net">Powered By www.MortgageCalculator.net</a>
+</div>
+    </body>
   </html>
